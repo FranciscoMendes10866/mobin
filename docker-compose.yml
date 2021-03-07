@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  redis-sessions:
+    image: redis:latest
+    container_name: redis-sessions
+    restart: always
+    ports:
+      - 8419:6379
+    command: ["redis-server", "--appendonly", "yes"]
+    networks:
+      - redis-sessions-net
+    volumes:
+      - redis-sessions:/data
+
+networks:
+  redis-sessions-net:
+volumes:
+  redis-sessions:
