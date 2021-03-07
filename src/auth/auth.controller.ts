@@ -22,7 +22,7 @@ class AuthController {
         throw new Error(err)
       }
     })
-    return res.clearCookie('access_token').status(200)
+    return res.clearCookie('access_token').sendStatus(200)
   }
 }
 
