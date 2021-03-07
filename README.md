@@ -12,7 +12,7 @@ Make sure you have the following tools:
 In the terminal execute the following cmd:
 
 ```bash
-npx degit https://github.com/FranciscoMendes10866/monome [PROJECT_NAME]
+npx degit https://github.com/FranciscoMendes10866/mobin [PROJECT_NAME]
 ```
 
 ## Installation
