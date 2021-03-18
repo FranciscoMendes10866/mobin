@@ -21,7 +21,7 @@ app.use(cors({ credentials: true, origin: CORS_ORIGIN }))
 app.use(helmet())
 app.use(session({
   store: new RedisStore({ client: RedisSessions }),
-  name: 'access_token',
+  name: 'node_session',
   secret: SESSIONS_SECRET_KEY,
   resave: false,
   saveUninitialized: false,
